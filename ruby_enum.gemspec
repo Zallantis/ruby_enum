@@ -5,17 +5,20 @@ require "ruby_enum/version"
 Gem::Specification.new do |spec|
   spec.name          = "ruby_enum"
   spec.version       = RubyEnum::VERSION
-  spec.authors       = ["Mykhailo Odyniuk"]
-  spec.email         = ["m.odyniuk@logicsolutions.com.ua"]
+  spec.authors       = ["Zallantis"]
+  spec.email         = ["developer@zallantis.com"]
 
   spec.summary       = %q{Ruby implementation of Enum type.}
   spec.description   = %q{Ruby implementation of Enum type.}
   spec.license       = "MIT"
-  spec.homepage      = "https://github.com/mlogix/ruby_enum.git"
+  spec.homepage      = "https://github.com/Zallantis/ruby_enum.git"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/mlogix/ruby_enum.git"
-  spec.metadata["changelog_uri"] = "https://github.com/mlogix/ruby_enum/blob/master/CHANGELOG.md."
+  spec.metadata["source_code_uri"] = "https://github.com/Zallantis/ruby_enum.git"
+  spec.metadata["changelog_uri"] = "https://github.com/Zallantis/ruby_enum/blob/master/CHANGELOG.md."
+  spec.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/Zallantis"
+  spec.metadata["github_repo"] = "ssh://git@github.com:Zallantis/ruby_enum.git"
+
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

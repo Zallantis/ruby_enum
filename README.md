@@ -7,8 +7,14 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem "ruby_enum", "0.1.7", github: "mlogix/ruby_enum", require: "ruby_enum"
+```Gemfile
+...
+source "https://rubygems.pkg.github.com/Zallantis" do
+  ...
+    gem "ruby_enum", require: "ruby_enum"
+  ...
+end
+...
 ```
 
 And then execute:

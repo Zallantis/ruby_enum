@@ -28,10 +28,13 @@ class Enum
       end.to_h
     end
 
-    def values(downcase: false, stringify: false)
+    def values(downcase: false, stringify: false, pluralize: false)
       entries.map do |v|
         val = downcase ? self.value_of(v).downcase : self.value_of(v)
-        stringify ? val.to_s : val
+        val = stringify ? val.to_s : val
+        val = (pluralize && stringify) ? val.pluralize : val
+
+        val
       end
     end
 
